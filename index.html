@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Lumorca AI Android uygulamasının gizlilik, veri işleme ve kullanıcı hakları politikası.">
+  <meta name="description" content="Lumorca AI (Assistant 0.2.0) Android uygulamasının gizlilik, veri işleme ve kullanıcı hakları politikası.">
   <title>Lumorca AI Gizlilik Politikası</title>
   <style>
     :root{--ink:#eaf5ff;--muted:#9bb1c9;--line:rgba(143,211,255,.16);--accent:#45d6ff;--surface:#0b1729;--bg:#06101e}
     *{box-sizing:border-box}html{background:var(--bg);color-scheme:dark}body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(43,159,255,.16),transparent 34rem),radial-gradient(circle at 10% 32%,rgba(51,224,204,.08),transparent 28rem),var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.75}
     main{width:min(calc(100% - 36px),860px);margin:auto}.hero{padding:64px 0 46px;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px;margin-bottom:62px;color:#fff;font-size:17px;font-weight:650}.mark{display:grid;width:34px;height:34px;place-items:center;border:1px solid rgba(69,214,255,.45);border-radius:10px;background:linear-gradient(145deg,rgba(69,214,255,.2),rgba(43,95,255,.1));color:var(--accent);font-family:monospace}
     .eyebrow{margin:0 0 12px;color:var(--accent);font-family:monospace;font-size:12px;font-weight:650;letter-spacing:.14em}h1{max-width:680px;margin:0;color:#fff;font-size:clamp(42px,8vw,72px);font-weight:650;letter-spacing:-.055em;line-height:1.02}.intro{max-width:670px;margin:26px 0 0;color:#c4d5e7;font-size:clamp(18px,3vw,22px);line-height:1.55}.meta{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:32px;color:var(--muted);font-family:monospace;font-size:12px}
-    article{padding:18px 0 64px}section{padding:38px 0;border-bottom:1px solid var(--line)}h2{margin:0 0 16px;color:#fff;font-size:24px;font-weight:620;letter-spacing:-.025em;line-height:1.25}p{margin:0 0 14px;color:#b8c9dc}ul{margin:18px 0 10px;padding-left:24px}li{margin:11px 0;color:#b8c9dc}li::marker{color:var(--accent)}strong{color:#e5f5ff}a{color:var(--accent);text-underline-offset:4px}
+    article{padding:18px 0 64px}section{padding:38px 0;border-bottom:1px solid var(--line)}h2{margin:0 0 16px;color:#fff;font-size:24px;font-weight:620;letter-spacing:-.025em;line-height:1.25}p{margin:0 0 14px;color:#b8c9dc}ul{margin:18px 0 10px;padding-left:24px}li{margin:11px 0;color:#b8c9dc}li::marker{color:var(--accent)}strong{color:#e5f5ff}a{color:var(--accent);text-underline-offset:4px}code{padding:2px 6px;border-radius:6px;background:rgba(69,214,255,.12);color:var(--accent);font-size:.9em}
     .contact{margin-top:34px;padding:34px;border:1px solid rgba(69,214,255,.26);border-radius:20px;background:linear-gradient(145deg,rgba(69,214,255,.12),rgba(11,23,41,.65))}.contact a{display:inline-block;margin:5px 0 14px;font-size:clamp(18px,4vw,25px);font-weight:600;word-break:break-word}.operator{color:var(--muted);font-size:14px}footer{display:flex;justify-content:space-between;gap:20px;padding:26px 0 42px;color:var(--muted);font-size:13px}
     @media(max-width:560px){main{width:min(calc(100% - 28px),860px)}.hero{padding-top:34px}.brand{margin-bottom:48px}.contact{padding:26px 22px}footer{flex-direction:column}}
   </style>
@@ -21,33 +21,83 @@
     <div class="brand"><span class="mark">L</span><span>Lumorca AI</span></div>
     <p class="eyebrow">GİZLİLİK VE VERİ KORUMA</p>
     <h1>Gizlilik Politikası</h1>
-    <p class="intro">Sesiniz ve kişisel verileriniz size aittir. Lumorca AI, verilerinizi mümkün olduğunca cihazınızda tutacak şekilde tasarlanmıştır.</p>
-    <div class="meta"><span>Yürürlük tarihi: 28 Temmuz 2026</span><span>Sürüm 1.0</span></div>
+    <p class="intro">Kişisel asistan verileriniz varsayılan olarak cihazınızda şifreli tutulur; ancak ses tanıma, hava durumu ve uygulama yönlendirmeleri için harici sistem ve ağ servisleri kullanılabildiğinden uygulama tamamen çevrimdışı değildir.</p>
+    <div class="meta"><span>Yürürlük tarihi: 17 Kasım 2026</span><span>Uygulama sürümü: 0.2.0 (Politika 2.0)</span></div>
   </header>
   <article>
-    <section><h2>1. Kapsam</h2><p>Bu Gizlilik Politikası, Lumorca Software tarafından sunulan Lumorca AI Android uygulamasında bilgilerin nasıl işlendiğini açıklar. Lumorca AI, mümkün olduğunca cihaz üzerinde çalışan, gizlilik odaklı bir kişisel asistandır.</p></section>
-    <section><h2>2. İşlenen bilgiler</h2><p>Uygulama, seçtiğiniz özelliklere bağlı olarak şu bilgilere erişebilir:</p><ul>
-      <li><strong>Ses ve mikrofon:</strong> Uyandırma kelimesini algılamak, konuşmayı metne dönüştürmek ve size sesli yanıt vermek için.</li>
-      <li><strong>Ses profili:</strong> Size ait sesi doğrulamak için oluşturulan kayıtlar ve bunlardan türetilen biyometrik ses temsilleri cihazda saklanır.</li>
-      <li><strong>Konum:</strong> İzin verdiğinizde konuma bağlı hava durumu gibi istekleri yanıtlamak için.</li>
-      <li><strong>Kişiler:</strong> İzin verdiğinizde arama veya mesajlaşma komutlarında doğru kişiyi seçmek için.</li>
-      <li><strong>Konuşmalar ve tercihler:</strong> Yanıt üretmek, konuşma bağlamını korumak ve kişiselleştirme sağlamak için.</li>
-      <li><strong>Bildirimler:</strong> İzin verdiğinizde bildirimlerle ilgili yardımcı işlevler sunmak için.</li>
-    </ul></section>
-    <section><h2>3. Verilerin kullanımı ve aktarımı</h2>
-      <p>Konuşma geçmişi, kişisel tercihler, ses profili ve benzeri uygulama verileri varsayılan olarak cihazınızda tutulur. Lumorca Software bu verileri reklam amacıyla satmaz veya paylaşmaz.</p>
-      <p>Bazı isteğe bağlı işlevler, talebinizi yerine getirmek için sınırlı verileri üçüncü taraf hizmetlere iletebilir:</p><ul>
-        <li>Android sistem konuşma tanıma hizmeti kullanıldığında ses verisi, cihazınızdaki konuşma tanıma sağlayıcısı tarafından işlenebilir.</li>
-        <li>Hava durumu sorgularında şehir adı veya yaklaşık koordinatlar Open-Meteo servislerine gönderilebilir.</li>
-        <li>WhatsApp gibi başka bir uygulamada işlem başlattığınızda seçtiğiniz alıcı ve mesaj, onayınızla ilgili uygulamaya aktarılır.</li>
-      </ul><p>Bu hizmetlerin veri işleme uygulamaları kendi gizlilik politikalarına tabidir.</p>
+    <section>
+      <h2>1. Kapsam</h2>
+      <p>Bu Gizlilik Politikası, Lumorca Software tarafından sunulan <strong>Lumorca AI</strong> (<code>com.lumorca.ai</code>, sürüm <strong>0.2.0</strong>) Android uygulamasında verilerin nasıl işlendiğini açıklar. Uygulama geliştiriciye ait bir bulut sunucusu çalıştırmaz ve kullanıcı hesabı oluşturmaz; bununla birlikte yalnızca belirli özellikleri yerine getirirken Android sistem servisleri ve seçili harici servislerle iletişim kurar.</p>
     </section>
-    <section><h2>4. İzinler ve kontrolünüz</h2><p>Mikrofon, konum, kişiler, telefon ve bildirim izinlerini Android ayarlarından istediğiniz zaman kapatabilirsiniz. İzin vermemeniz yalnızca ilgili özelliğin çalışmasını etkiler. Uygulama, kullanıcı onayı olmadan arama veya mesaj gönderme amacı taşımaz.</p></section>
-    <section><h2>5. Saklama ve silme</h2><p>Cihazda tutulan veriler, uygulama içindeki temizleme seçenekleri veya Android uygulama ayarları kullanılarak silinebilir. Uygulamanın kaldırılması cihazdaki uygulama verilerini de kaldırır. Kalibrasyon veya gönüllü veri toplama ekranlarından alınan ham sesler açık onay olmadan yayımlanmaz ve analiz hizmetlerine gönderilmez.</p><p><a href="./delete-data.html">Ayrıntılı veri silme adımlarını ve silme talebi yöntemini görüntüleyin.</a></p></section>
-    <section><h2>6. Güvenlik</h2><p>Lumorca AI, yerel veriye erişimi sınırlamak ve hassas bilgilerin gereksiz aktarımını önlemek için makul teknik önlemler kullanır. Bununla birlikte hiçbir elektronik saklama veya aktarım yöntemi mutlak güvenlik garantisi vermez.</p></section>
-    <section><h2>7. Çocukların gizliliği</h2><p>Lumorca AI çocuklara yönelik tasarlanmamıştır. Hizmet, 18 yaşın altındaki kişilerden bilerek kişisel veri toplama amacı taşımaz.</p></section>
-    <section><h2>8. Değişiklikler</h2><p>Bu politika, uygulamanın özellikleri veya yasal gereklilikler değiştiğinde güncellenebilir. Güncel sürüm bu sayfada, yürürlük tarihiyle birlikte yayımlanır.</p></section>
-    <section class="contact"><p class="eyebrow">İLETİŞİM</p><h2>9. Bize ulaşın</h2><p>Gizlilik, veri silme veya bu politika hakkındaki sorularınız için:</p><a href="mailto:ozgunerbudak@gmail.com">ozgunerbudak@gmail.com</a><p class="operator">Veri sorumlusu / geliştirici: Lumorca Software</p></section>
+
+    <section>
+      <h2>2. İşlenen bilgiler ve izinler</h2>
+      <p>Uygulama, yalnızca sizin tetiklediğiniz komutlara ve verdiğiniz izinlere bağlı olarak şu bilgilere erişebilir:</p>
+      <ul>
+        <li><strong>Kullanıcı tarafından başlatılan mikrofon erişimi (<code>RECORD_AUDIO</code>) ve Türkçe TTS:</strong> Mikrofon yalnızca siz ekrandaki Bas-Konuş (<code>Konuş</code> veya mikrofon) düğmesine bastığınızda etkinleştirilir. Yanıtların sesli okunması cihazdaki Android sistem <strong>TextToSpeech (Türkçe TTS)</strong> motoru aracılığıyla yapılır.</li>
+        <li><strong>Sürüm 0.2.0'da pasif ses özellikleri devre dışıdır:</strong> 0.2.0 üretim sürümünde sürekli arka plan dinleme, uyandırma kelimesi algılama, biyometrik ses profili doğrulama ve ham ses (WAV) veri toplama araçları aktif değildir ve sürüm paketine dahil edilmez.</li>
+        <li><strong>Yaklaşık konum (<code>ACCESS_COARSE_LOCATION</code>):</strong> Kesin GPS konumu (<code>ACCESS_FINE_LOCATION</code>) istenmez ve kullanılmaz. Yalnızca şehir adı vermeden "Hava nasıl?" gibi bir sorgu yaptığınızda ağ veya birleşik sistem sağlayıcısından yaklaşık konum alınır. Şehir adı verilen sorgularda ("İstanbul'da hava nasıl?") cihaz konumuna erişilmez.</li>
+        <li><strong>Rehber (<code>READ_CONTACTS</code>) ve telefon arama yönlendirmesi:</strong> Kişi arama veya arama komutu verdiğinizde rehberiniz yalnızca cihaz içinde eşleştirilir ve dış sunuculara gönderilmez. Uygulama doğrudan arka plan araması başlatmaz (<code>CALL_PHONE</code> izni yoktur); seçtiğiniz numara onayınız için Android telefon arama ekranına (<code>ACTION_DIAL</code>) yönlendirilir.</li>
+        <li><strong>WhatsApp mesaj taslağı hazırlama:</strong> Mesaj gönderme taleplerinizde onayınızla birlikte seçilen alıcı ve taslak metin resmi WhatsApp veya WhatsApp Business uygulamasına yönlendirilir; kullanıcı etkileşimi olmadan otomatik mesaj gönderilmez.</li>
+        <li><strong>Bildirim erişimi (<code>BIND_NOTIFICATION_LISTENER_SERVICE</code>) ve RAM içi işleme:</strong> Varsayılan olarak kapalıdır. Android Bildirim Erişimi ayarlarından açıkça izin vermeniz hâlinde yalnızca aktif durum çubuğu bildirim özetleri <strong>geçici bellek (RAM)</strong> içinde tutulur; kalıcı veritabanına veya diske yazılmaz ve bildirim kapatıldığında ya da uygulama durduğunda silinir.</li>
+        <li><strong>Sohbet geçmişi, hafıza, ilişkiler, hedefler ve hatırlatıcılar:</strong> Yazılı veya sesli sohbet kayıtlarınız, ad/hitap tercihiniz, kaydettiğiniz anılar, önemli kişiler/ilişkiler, kişisel hedefler ve hatırlatıcılar cihaz üzerinde saklanır.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Yerel şifreli depolama (Room, SQLCipher ve Android Keystore)</h2>
+      <p>Sohbet geçmişi, profil bilgileri, hafıza/ilişki kayıtları, hedefler ve hatırlatıcılar cihazınızda şifreli <strong>Room + SQLCipher</strong> veritabanında (<code>lumorca.db</code>) ve kullanıcı profil tercihleri <strong>EncryptedSharedPreferences</strong> alanında saklanır.</p>
+      <p>Veritabanı şifreleme anahtarı <strong>Android Keystore</strong> donanım/sistem korumalı anahtarlarıyla sarılır. Android otomatik uygulama yedeklemesi (<code>android:allowBackup="false"</code>) kapalıdır.</p>
+    </section>
+
+    <section>
+      <h2>4. Üçüncü taraf servislere veri aktarımı</h2>
+      <p>Lumorca Software kişisel verilerinizi reklam veya profilleme amacıyla satmaz, kiralamaz veya kendi sunucularında toplamaz. Ancak 0.2.0 sürümü tamamen çevrimdışı değildir; talebinizi yerine getirmek için aşağıdaki aktarımlar gerçekleşir:</p>
+      <ul>
+        <li><strong>Android <code>SpeechRecognizer</code> ve konuşma tanıma sağlayıcıları:</strong> Bas-Konuş kullandığınızda ses akışı cihazınızın Android sistem <code>SpeechRecognizer</code> servisine iletilir. Cihazınızda seçili konuşma tanıma sağlayıcısına (örneğin Google Speech Services veya üretici motoru) bağlı olarak ses verisi ilgili üçüncü taraf sağlayıcının sunucularında işlenebilir.</li>
+        <li><strong>Open-Meteo hava durumu servisi:</strong> Konuma dayalı hava durumu sorgularında cihaz koordinatları dışarı gönderilmeden önce 2 ondalık basamağa (~1.1 km çözünürlüğe) yuvarlatılır ve yalnızca <code>https://api.open-meteo.com</code> adresine HTTPS üzerinden gönderilir. Şehir bazlı sorgularda ise yalnızca şehir adı <code>https://geocoding-api.open-meteo.com</code> ve tahmin API'sine iletilir.</li>
+        <li><strong>Harici uygulama yönlendirmeleri:</strong> Onayınızla WhatsApp taslağı açtığınızda seçili metin ve alıcı numarası ilgili uygulamaya aktarılır.</li>
+      </ul>
+      <p>Bu üçüncü taraf sağlayıcıların kendi sistemlerindeki veri işleme süreçleri ilgili sağlayıcıların gizlilik politikalarına tabidir.</p>
+    </section>
+
+    <section>
+      <h2>5. İzinler ve kontrolünüz</h2>
+      <p>Mikrofon, yaklaşık konum, kişiler ve bildirim erişimi izinlerini Android sistem ayarlarından dilediğiniz zaman kapatabilirsiniz. İzin vermemeniz yalnızca ilgili aracın çalışmasını etkiler; diğer yerel komutlar ve metin sohbeti çalışmaya devam eder.</p>
+    </section>
+
+    <section>
+      <h2>6. Veri saklama ve silme yöntemleri</h2>
+      <p>Lumorca AI geliştirici sunucularında hesap veya kullanıcı içeriği tutmadığı için kalıcı veriler siz silene kadar yalnızca cihazınızda saklanır:</p>
+      <ul>
+        <li><strong>Uygulama içi silme kontrolleri:</strong> Sohbet ekranında <strong>Oturumu Temizle</strong> düğmesiyle sohbet geçmişini silebilir; Hafıza, Önemli Kişiler/İlişkiler ve Hedefler/Hatırlatıcılar ekranlarında tekil kayıtları <strong>Sil</strong> düğmesiyle kaldırabilirsiniz.</li>
+        <li><strong>Tüm yerel verilerin kalıcı temizlenmesi:</strong> Kullanıcı adı/hitap tercihi dahil cihazdaki tüm veritabanını, şifreli tercihleri ve anahtarları kalıcı olarak kaldırmak için Android <strong>Ayarlar → Uygulamalar → Lumorca → Depolama → Verileri temizle</strong> adımını kullanabilir veya uygulamayı kaldırabilirsiniz.</li>
+      </ul>
+      <p><a href="./delete-data.html">Ayrıntılı veri silme adımlarını ve kapsamını görüntüleyin.</a></p>
+    </section>
+
+    <section>
+      <h2>7. Güvenlik</h2>
+      <p>Yerel verilerin korunması için Room + SQLCipher şifrelemesi, Android Keystore anahtar sarmalama, HTTPS aktarım ve minimum ayrıcalıklı izinler kullanılır. Bununla birlikte hiçbir elektronik saklama veya aktarım yöntemi mutlak güvenlik garantisi veremez.</p>
+    </section>
+
+    <section>
+      <h2>8. Çocukların gizliliği</h2>
+      <p>Lumorca AI 18 yaşın altındaki çocuklara yönelik tasarlanmamıştır ve bilerek çocuklardan kişisel veri toplamaz.</p>
+    </section>
+
+    <section>
+      <h2>9. Değişiklikler</h2>
+      <p>Bu politika uygulamanın yeni sürümleri veya yasal gereklilikler doğrultusunda güncellenebilir ve güncel yürürlük tarihiyle bu adreste yayımlanır.</p>
+    </section>
+
+    <section class="contact">
+      <p class="eyebrow">İLETİŞİM</p>
+      <h2>10. Bize ulaşın</h2>
+      <p>Gizlilik, veri silme veya bu politika hakkındaki sorularınız için:</p>
+      <a href="mailto:ozgunerbudak@gmail.com">ozgunerbudak@gmail.com</a>
+      <p class="operator">Veri sorumlusu / geliştirici: Lumorca Software</p>
+    </section>
   </article>
   <footer><span>© 2026 Lumorca Software</span><a href="mailto:ozgunerbudak@gmail.com">Gizlilik desteği</a></footer>
 </main>

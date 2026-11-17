@@ -3,57 +3,78 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Lumorca AI kullanıcı verilerini silme adımları ve veri silme talebi.">
+  <meta name="description" content="Lumorca AI (0.2.0) kullanıcı verilerini silme adımları, yerel veri kapsamı ve e-posta ile başvuru yöntemi.">
   <title>Lumorca AI — Veri Silme</title>
   <style>
     :root{--ink:#eaf5ff;--muted:#9bb1c9;--line:rgba(143,211,255,.16);--accent:#45d6ff;--bg:#06101e}
     *{box-sizing:border-box}html{background:var(--bg);color-scheme:dark}body{margin:0;background:radial-gradient(circle at 85% 0%,rgba(43,159,255,.16),transparent 34rem),var(--bg);color:var(--ink);font:16px/1.75 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
     main{width:min(calc(100% - 36px),820px);margin:auto;padding:56px 0}.brand{display:flex;align-items:center;gap:12px;margin-bottom:54px;font-weight:650}.mark{display:grid;width:34px;height:34px;place-items:center;border:1px solid rgba(69,214,255,.45);border-radius:10px;color:var(--accent)}
-    .eyebrow{color:var(--accent);font:650 12px/1.4 monospace;letter-spacing:.14em}h1{margin:12px 0 20px;color:#fff;font-size:clamp(38px,7vw,64px);line-height:1.05;letter-spacing:-.05em}h2{margin:0 0 14px;color:#fff;font-size:24px}p,li{color:#b8c9dc}section{padding:34px 0;border-bottom:1px solid var(--line)}li{margin:10px 0}li::marker{color:var(--accent)}a{color:var(--accent);text-underline-offset:4px}.action{display:inline-block;margin-top:8px;padding:12px 18px;border:1px solid rgba(69,214,255,.35);border-radius:12px;background:rgba(69,214,255,.1);font-weight:650;text-decoration:none}.note{color:var(--muted);font-size:14px}footer{display:flex;justify-content:space-between;gap:20px;padding-top:30px;color:var(--muted);font-size:13px}
+    .eyebrow{color:var(--accent);font:650 12px/1.4 monospace;letter-spacing:.14em}h1{margin:12px 0 20px;color:#fff;font-size:clamp(38px,7vw,64px);line-height:1.05;letter-spacing:-.05em}h2{margin:0 0 14px;color:#fff;font-size:24px}p,li{color:#b8c9dc}section{padding:34px 0;border-bottom:1px solid var(--line)}li{margin:10px 0}li::marker{color:var(--accent)}a{color:var(--accent);text-underline-offset:4px}code{padding:2px 6px;border-radius:6px;background:rgba(69,214,255,.12);color:var(--accent);font-size:.9em}.action{display:inline-block;margin-top:8px;padding:12px 18px;border:1px solid rgba(69,214,255,.35);border-radius:12px;background:rgba(69,214,255,.1);font-weight:650;text-decoration:none}.note{color:var(--muted);font-size:14px}footer{display:flex;justify-content:space-between;gap:20px;padding-top:30px;color:var(--muted);font-size:13px}
     @media(max-width:560px){main{width:min(calc(100% - 28px),820px);padding-top:34px}footer{flex-direction:column}}
   </style>
 </head>
 <body>
 <main>
   <div class="brand"><span class="mark">L</span><span>Lumorca AI</span></div>
-  <p class="eyebrow">VERİ KONTROLÜ</p>
+  <p class="eyebrow">VERİ KONTROLÜ · SÜRÜM 0.2.0</p>
   <h1>Verilerinizi silme</h1>
-  <p>Lumorca AI verilerinin büyük bölümü yalnızca Android cihazınızda tutulur. Aşağıdaki yöntemlerden birini kullanarak verilerinizi silebilir veya silme talebi gönderebilirsiniz.</p>
+  <p>Lumorca AI kullanıcı hesabı oluşturmaz ve geliştirici sunucularında kişisel veri depolamaz. Kalıcı uygulama verileri yalnızca Android cihazınızda şifreli olarak saklanır; aşağıdaki adımlarla verilerinizi kısmen veya tamamen silebilirsiniz.</p>
 
   <section>
-    <h2>1. Cihazdaki tüm uygulama verilerini silme</h2>
-    <ol>
-      <li>Android <strong>Ayarlar</strong> uygulamasını açın.</li>
-      <li><strong>Uygulamalar → Lumorca AI → Depolama</strong> bölümüne gidin.</li>
-      <li><strong>Verileri temizle</strong> veya <strong>Depolamayı temizle</strong> seçeneğini kullanın.</li>
-    </ol>
-    <p>Uygulamayı kaldırmak da cihazdaki Lumorca AI uygulama verilerini siler.</p>
-  </section>
-
-  <section>
-    <h2>2. E-posta ile silme talebi</h2>
-    <p>Konu satırına “Lumorca AI veri silme talebi” yazarak bize ulaşın. Talebin işlenebilmesi için yalnızca kullandığınız cihazı ve silinmesini istediğiniz veri kategorisini belirtin; şifre, ses kaydı veya başka hassas bilgi göndermeyin.</p>
-    <a class="action" href="mailto:ozgunerbudak@gmail.com?subject=Lumorca%20AI%20veri%20silme%20talebi">Silme talebi gönder</a>
-  </section>
-
-  <section>
-    <h2>Silinen veriler</h2>
+    <h2>1. Uygulama içi sohbet ve hafıza kayıtlarını silme</h2>
     <ul>
-      <li>Konuşma geçmişi ve yerel kişiselleştirme verileri</li>
-      <li>Hatırlatıcılar, tercihler ve yerel ayarlar</li>
-      <li>Uyandırma kelimesi kalibrasyon kayıtları</li>
-      <li>Ses profili kayıtları ve cihazda tutulan türetilmiş ses temsilleri</li>
-      <li>Uygulamaya ait diğer yerel veritabanı ve önbellek verileri</li>
+      <li><strong>Sohbet geçmişi:</strong> Uygulama içinde <strong>Sohbet</strong> sekmesinin üst kısmındaki <strong>Oturumu Temizle</strong> düğmesi ile kayıtlı sohbet geçmişini silebilirsiniz.</li>
+      <li><strong>Hafıza, ilişkiler, hedefler ve hatırlatıcılar:</strong> İlgili ekranlardaki her kaydın yanında bulunan <strong>Sil</strong> düğmesini kullanarak tekil kayıtları kaldırabilirsiniz.</li>
+      <li><strong>Not:</strong> Uygulama içinde tüm alanları tek dokunuşla fabrika ayarlarına döndüren veya profil adını tamamen sıfırlayan ayrı bir "tüm hesabı/veriyi sil" düğmesi bulunmaz; tam sıfırlama için aşağıdaki sistem adımlarını kullanın.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Saklama süresi ve istisnalar</h2>
-    <p>Lumorca AI şu anda uygulama hesabı oluşturmaz ve Lumorca Software sunucularında kullanıcı hesabı verisi tutmaz. Cihazdaki veriler, siz silene veya uygulamayı kaldırana kadar cihazda kalabilir.</p>
-    <p>E-posta ile gönderilen silme talebi yazışmaları, talebi sonuçlandırmak ve yasal yükümlülükleri karşılamak amacıyla en fazla 90 gün saklanabilir. Yasal olarak saklanması zorunlu kayıtlar, yalnızca gerekli süre boyunca korunur.</p>
+    <h2>2. Cihazdaki uygulama depolamasını temizleme</h2>
+    <ol>
+      <li>Android <strong>Ayarlar</strong> uygulamasını açın.</li>
+      <li><strong>Uygulamalar → Lumorca → Depolama</strong> (cihaza göre <em>Depolama ve önbellek</em>) bölümüne gidin.</li>
+      <li><strong>Verileri temizle</strong> / <strong>Depolamayı temizle</strong> seçeneğine dokunun.</li>
+    </ol>
+    <p>Bu işlem şifreli Room/SQLCipher veritabanını (<code>lumorca.db</code>), <code>EncryptedSharedPreferences</code> dosyasını ve yerel anahtar sarmalama verilerini cihazdan kalıcı olarak temizler.</p>
   </section>
 
-  <p class="note">Son güncelleme: 28 Temmuz 2026 · Lumorca Software</p>
+  <section>
+    <h2>3. Uygulamayı kaldırma</h2>
+    <p>Lumorca AI uygulamasını cihazınızdan kaldırdığınızda (<code>android:allowBackup="false"</code> ayarı etkin olduğundan otomatik bulut yedeği tutulmaz), cihaz üzerindeki tüm kalıcı uygulama veritabanı, sohbet geçmişi, hafıza/ilişki kayıtları, hedefler, hatırlatıcılar ve geçici önbellekler kalıcı olarak silinir.</p>
+  </section>
+
+  <section>
+    <h2>4. Yalnızca cihazda saklanan ve kalıcı olarak silinen veriler</h2>
+    <ul>
+      <li>Şifreli sohbet geçmişi ve arşivlenmiş mesajlar (Room + SQLCipher + Android Keystore korumalı anahtarlar)</li>
+      <li>Kullanıcı adı ve tercih edilen hitap şekli</li>
+      <li>Kişisel anılar (hafıza kayıtları) ve önemli kişiler / ilişkiler</li>
+      <li>Aktif hedefler, tamamlanma durumları ve hatırlatıcılar</li>
+      <li>Geçici RAM içi bildirim özetleri (zaten kalıcı diske yazılmaz; uygulama kapatıldığında veya bildirim temizlendiğinde bellekten silinir)</li>
+    </ul>
+    <p class="note">Not: 0.2.0 sürümünde uyandırma kelimesi kalibrasyon kayıtları veya biyometrik ses profili verileri oluşturulmaz ve saklanmaz.</p>
+  </section>
+
+  <section>
+    <h2>5. Harici servislere aktarılan verilerin kapsamı</h2>
+    <p>Lumorca Software'in geliştirici sunucusu olmadığı için geliştirici tarafında silinecek uzak hesap verisi yoktur. Ancak özellik kullanımınız sırasında aşağıdaki üçüncü taraf hizmetlere anlık veri aktarılmış olabilir:</p>
+    <ul>
+      <li><strong>Android sistem <code>SpeechRecognizer</code>:</strong> Bas-Konuş anındaki ses verisi cihazınızdaki varsayılan konuşma tanıma sağlayıcısına (ör. Google Speech Services) iletilebilir.</li>
+      <li><strong>Open-Meteo API:</strong> Hava durumu sorgularında yalnızca 2 ondalık basamağa (~1.1 km) yuvarlatılmış yaklaşık koordinat veya şehir adı HTTPS ile iletilir.</li>
+      <li><strong>WhatsApp yönlendirmesi:</strong> Onayladığınız alıcı ve taslak mesaj, kendi cihazınızdaki WhatsApp uygulamasına aktarılır.</li>
+    </ul>
+    <p>Bu üçüncü taraf sağlayıcıların kendi sistemlerinde tutabileceği günlük veya veriler, ilgili sağlayıcıların kendi gizlilik ve silme politikalarına tabidir.</p>
+  </section>
+
+  <section>
+    <h2>6. E-posta ile başvuru</h2>
+    <p>Gizlilik ve veri silme süreçleri hakkında destek almak veya bizimle paylaştığınız destek yazışmalarının silinmesini talep etmek için konu satırına “Lumorca AI veri silme talebi” yazarak e-posta gönderebilirsiniz (şifre veya hassas içerik eklemeyin):</p>
+    <a class="action" href="mailto:ozgunerbudak@gmail.com?subject=Lumorca%20AI%20veri%20silme%20talebi">E-posta ile silme talebi gönder</a>
+    <p class="note" style="margin-top:14px">E-posta ile iletilen destek talepleri, talebin sonuçlandırılması ve yasal yükümlülükler kapsamında en fazla 90 gün saklanır.</p>
+  </section>
+
+  <p class="note">Son güncelleme: 17 Kasım 2026 · Lumorca Software (Sürüm 0.2.0)</p>
   <footer><a href="./">Gizlilik Politikasına dön</a><a href="mailto:ozgunerbudak@gmail.com">ozgunerbudak@gmail.com</a></footer>
 </main>
 </body>
